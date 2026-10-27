@@ -1,0 +1,23 @@
+# ============================================================================
+# dsh-fish-card — a sticky-note card for DeepSeek Harness
+# ============================================================================
+# Inserts the card into the Web profile's config tree.
+#
+# Install:
+#   dsh plugin --profile <profile> add dsh-fish-card
+#   dsh plugin --profile <profile> add "link:/absolute/path/to/dsh-fish-card"
+#
+# The card shows three things:
+#   1. The agent's current status (awake / idle / asleep)
+#   2. One short line it wants to say today
+#   3. A "call me" button
+#
+# Design rules (fixed 2026-10-21):
+#   1. It starts on the desktop
+#   2. It reads like a sticky note, not a dashboard
+#   3. It never shows token usage or message counts
+# ============================================================================
+
+- insert:
+    - id: dsh-fish-card
+      name: dsh-fish-card

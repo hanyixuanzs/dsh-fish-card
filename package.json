@@ -1,0 +1,33 @@
+{
+  "name": "dsh-fish-card",
+  "version": "0.1.0",
+  "description": "A sticky-note style card for DeepSeek Harness: shows the agent's live status, one short line it wants to say, and a call button. No token counters, no message stats.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "card",
+    "desktop",
+    "companion"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "licenseNote": "Code is MIT. Bundled artwork under assets/ is NOT covered by MIT; see NOTICE.md."
+}
